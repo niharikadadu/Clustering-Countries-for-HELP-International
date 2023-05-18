@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRML Minor Project</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="../static/index.js"></script>
+    
+</head>
+
+<body>
+    <div class="header">
+        <h1>PRML Minor Project - HELP Organisation</h1>
+    </div>
+
+    
+    <!-- creating a form to take country name -->
+    <!-- get method -->
+    <div class="main">
+        <div class="image">
+            <img src="static/1.jpg" alt="world map mummy" style="height: 50vh; width: 50vw;">
+        </div>
+        <div>
+
+            <img
+            src="{{flag}}"
+            alt="Perform search" style="width: 50%; height: 50%; margin-left: 200px;">
+            <div class="form">
+                <form method="POST" id="search">
+                    <p>Search a Country<input type = "text" name = "Country" /></p>
+                    <button type="submit" name="submit" id="search-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div id="info">
+        <table id="table-header">
+            <tr id="headings">
+                <!-- ['index', 'child_mort', 'exports', 'health', 'imports', 'income', 'inflation', 'life_expec', 'total_fer', 'gdpp', 'country', 'inform', 'class', 'predicted'] -->
+                <th>Index</th>
+                <th>Child Mortality</th>
+                <th>Exports</th>
+                <th>Health</th>
+                <th>Imports</th>
+                <th>Income</th>
+                <th>Inflation</th>
+                <th>Life Expectancy</th>
+                <th>Total Fertility</th>
+                <th>GDP</th>
+                <th>Country</th>
+                <th>Inform</th>
+                <th>Class</th>
+                <th>Predicted</th>
+            </tr>
+            <tr>
+                <td>{{index}}</td>
+                <td>{{child_mort}}</td>
+                <td>{{exports}}</td>
+                <td>{{health}}</td>
+                <td>{{imports}}</td>
+                <td>{{income}}</td>
+                <td>{{inflation}}</td>
+                <td>{{life_expec}}</td>
+                <td>{{total_fer}}</td>
+                <td>{{gdpp}}</td>
+                <td>{{country}}</td>
+                <td>{{inform}}</td>
+                <td>{{class1}}</td>
+                <td>{{predicted}}</td>
+
+                
+
+                
+                
+
+            </tr>
+        </table>
+    </div>
+    
+    <!-- showing results for submitted country -->
+    <!-- <div class="result">
+        <h1>Result</h1>
+        <p>
+            {{result}}
+        </p>
+    </div> -->
+    
+
+
+    
+
+</body>
+
+</html>
